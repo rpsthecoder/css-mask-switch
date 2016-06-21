@@ -48,13 +48,13 @@
   #nightSkin{
      background-image: url('night.png');
      /* for firefox */
-     mask:url(index.html/#leftSwitchMask);
+     mask:url(https://rpsthecoder.github.io/css-mask-switch/index.html#leftSwitchMask);
      /* for webkit */
      -webkit-mask-image: radial-gradient(circle at 45px 45px , rgba(0,0,0,0) 45px, rgba(0,0,0,1) 45px);
   }
   #leftRadio:checked~#nightSkin{
      /* for firefox */
-     mask:url(index.html/#rightSwitchMask);
+     mask:url(https://rpsthecoder.github.io/css-mask-switch/index.html#rightSwitchMask);
      /* for webkit */
      -webkit-mask-image: radial-gradient(circle at 405px 45px, rgba(0,0,0,1) 45px, rgba(0,0,0,0) 45px);
   }
