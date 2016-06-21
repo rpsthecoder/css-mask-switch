@@ -1,0 +1,60 @@
+ #outerWrapper{
+    width: 450px;
+    height: 90px;
+    padding: 10px;
+    margin: 100px auto 0 auto;
+    border-radius: 55px; 
+    box-shadow: 0 0  10px 6px #EAEBED;
+    background: #fff;
+  }
+  #innerWrapper{
+    height: 100%;
+    border-radius: 45px; 
+    overflow: hidden;
+    position: relative;
+  }
+  .radio{  
+    width: 90px;
+    height: 100%; 
+    position: absolute;
+    margin: 0;
+  }
+  #rightRadio,
+  #leftRadio:checked~#switchBtnOutline{
+    right: 0;
+  }
+  #switchBtnOutline{
+    width: 90px;
+    height: 100%; 
+    border-radius: 45px; 
+    box-shadow:0 0 2px 2px grey inset, 0 0 10px grey;
+    pointer-events: none;
+    position: absolute;
+    margin: 0;
+  }
+  .radio:not(:checked){
+    cursor: pointer;
+  }
+  .skin{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    margin: 0;
+  }
+  #daySkin{
+     background-image: url('day.png');
+  }
+  #nightSkin{
+     background-image: url('night.png');
+     /* for firefox */
+     mask:url(index.html/#leftSwitchMask);
+     /* for webkit */
+     -webkit-mask-image: radial-gradient(circle at 45px 45px , rgba(0,0,0,0) 45px, rgba(0,0,0,1) 45px);
+  }
+  #leftRadio:checked~#nightSkin{
+     /* for firefox */
+     mask:url(index.html/#rightSwitchMask);
+     /* for webkit */
+     -webkit-mask-image: radial-gradient(circle at 405px 45px, rgba(0,0,0,1) 45px, rgba(0,0,0,0) 45px);
+  }
