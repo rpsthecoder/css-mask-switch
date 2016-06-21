@@ -58,3 +58,17 @@
      /* for webkit */
      -webkit-mask-image: radial-gradient(circle at 405px 45px, rgba(0,0,0,1) 45px, rgba(0,0,0,0) 45px);
   }
+   .misc{
+  width: 450px;
+  margin: auto;
+  font-size: 9pt;
+  font-family: "bookman old style";
+ }
+ h2{
+  width: 450px;
+  margin: auto;
+  font-family: "bookman old style";
+ }
+ a:link {
+    color: #0095DD;
+}
